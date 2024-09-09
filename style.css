@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-image: url(image.png);
+  background-position: center;
+  background-size: contain;
+  background-blend-mode: darken;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 50vw;
+  height: 50vh;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 0 20px 10px rgba(0, 255, 0, 0.7);
+  border: 5px solid rgb(0, 255, 0);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box h1 {
+  color: rgb(0, 255, 0);
+  font-family: "Press Start 2P";
+  padding: 1em;
+  font-size: 3em;
+  text-align: center;
+}
+
+.box .todo-box .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.box .todo-box .row input {
+  width: 25rem;
+  height: 3rem;
+  border: none;
+  background: transparent;
+  color: rgb(0, 255, 0);
+  font-size: 1.2em;
+  border-bottom: 1px solid rgb(0, 255, 0);
+}
+
+.box .todo-box .row input::placeholder {
+  color: white;
+  font-weight: 300;
+}
+
+.box .todo-box .row input:focus {
+  outline: none;
+}
+
+button {
+  width: 6em;
+  height: 3em;
+  background-color: transparent;
+  color: rgb(0, 255, 0);
+  border: 1px solid rgb(0, 255, 0);
+  border-radius: 20px;
+  margin: 1em;
+  transition: 0.3s all ease-in-out;
+}
+
+button:hover {
+  background-color: rgb(0, 255, 0);
+  color: black;
+  font-weight: 700;
+  border: 2px solid black;
+}
+
+ul {
+  width: 100%;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  width: calc(100% - 2em);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  border-bottom: 1px solid rgb(0, 255, 0);
+}
+
+li.checked {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li span {
+  cursor: pointer;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 999px) {
+  .box {
+    width: 80vw;
+    height: auto;
+  }
+
+  .box h1 {
+    font-size: 2em;
+  }
+  .box .todo-box .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .box .todo-box .row input {
+    width: 15rem;
+    height: 2.5rem;
+    font-size: 1em;
+  }
+
+  button {
+    width: 5em;
+    height: 2.5em;
+  }
+
+  ul {
+    padding: 0.5em;
+  }
+
+  li {
+    font-size: 0.9em;
+  }
+}
+@media  (max-width: 360px){
+  .box{
+width: 100vw;
+height: 100vh;
+  }
+  .box .todo-box .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
