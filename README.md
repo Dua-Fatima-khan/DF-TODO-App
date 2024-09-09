@@ -23,10 +23,9 @@ A simple yet elegant To-Do application built using *HTML*, *CSS*, and *JavaScrip
 2. **Delete a task** ❌: Click the "X" icon next to a task to remove it from the list.
 3. **Responsive** 📱: Use the app on any device—desktop, tablet, or mobile!
 
-## Screenshots 📸
+## Preview 📸
 
-![DF-TODO App Screenshot](![image](https://github.com/user-attachments/assets/435b77e2-19b8-4028-8436-e7ea4c514003)
-)
+![DF-TODO App Preview](https://github.com/user-attachments/assets/435b77e2-19b8-4028-8436-e7ea4c514003)
 
 ## Contact 📫
 
